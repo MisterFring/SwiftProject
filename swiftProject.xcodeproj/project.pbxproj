@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4043AA8F27C62B7F0071E750 /* BookCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4043AA8E27C62B7F0071E750 /* BookCollectionViewController.swift */; };
 		4043AA9127C62EDC0071E750 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4043AA9027C62EDC0071E750 /* BookCollectionViewCell.swift */; };
-		4043AA9327C6458B0071E750 /* imgAhri.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4043AA9227C6458B0071E750 /* imgAhri.jpeg */; };
 		D6C0088027C43A1300F93756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0087F27C43A1300F93756 /* AppDelegate.swift */; };
 		D6C0088227C43A1300F93756 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0088127C43A1300F93756 /* SceneDelegate.swift */; };
 		D6C0088427C43A1300F93756 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0088327C43A1300F93756 /* ViewController.swift */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		4043AA8E27C62B7F0071E750 /* BookCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewController.swift; sourceTree = "<group>"; };
 		4043AA9027C62EDC0071E750 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
-		4043AA9227C6458B0071E750 /* imgAhri.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imgAhri.jpeg; path = "../../../../../../Desktop/heros lol/imgAhri.jpeg"; sourceTree = "<group>"; };
 		D6C0087C27C43A1300F93756 /* swiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C0087F27C43A1300F93756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C0088127C43A1300F93756 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			children = (
 				D6C008A027C43A1400F93756 /* swiftProjectUITests.swift */,
 				D6C008A227C43A1400F93756 /* swiftProjectUITestsLaunchTests.swift */,
-				4043AA9227C6458B0071E750 /* imgAhri.jpeg */,
 			);
 			path = swiftProjectUITests;
 			sourceTree = "<group>";
@@ -273,7 +270,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4043AA9327C6458B0071E750 /* imgAhri.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
