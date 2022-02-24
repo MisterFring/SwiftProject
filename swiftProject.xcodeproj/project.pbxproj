@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B48ABAAB27C645D000E77EEF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ABAAA27C645D000E77EEF /* DetailsViewController.swift */; };
+		B48ABAAD27C6732700E77EEF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48ABAAC27C6732700E77EEF /* WebViewController.swift */; };
 		D6C0088027C43A1300F93756 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0087F27C43A1300F93756 /* AppDelegate.swift */; };
 		D6C0088227C43A1300F93756 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0088127C43A1300F93756 /* SceneDelegate.swift */; };
 		D6C0088427C43A1300F93756 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C0088327C43A1300F93756 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B48ABAAA27C645D000E77EEF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B48ABAAC27C6732700E77EEF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		D6C0087C27C43A1300F93756 /* swiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C0087F27C43A1300F93756 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C0088127C43A1300F93756 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				D6C0088327C43A1300F93756 /* ViewController.swift */,
+				B48ABAAA27C645D000E77EEF /* DetailsViewController.swift */,
+				B48ABAAC27C6732700E77EEF /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -277,6 +283,8 @@
 				D6C0088427C43A1300F93756 /* ViewController.swift in Sources */,
 				D6C0088027C43A1300F93756 /* AppDelegate.swift in Sources */,
 				D6C0088227C43A1300F93756 /* SceneDelegate.swift in Sources */,
+				B48ABAAD27C6732700E77EEF /* WebViewController.swift in Sources */,
+				B48ABAAB27C645D000E77EEF /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
