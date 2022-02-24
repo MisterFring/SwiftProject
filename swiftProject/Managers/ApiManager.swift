@@ -56,12 +56,7 @@ class ApiManager {
                 if let json = try? JSONSerialization.jsonObject(with: data!, options: []){
                     if let data = json as? [String:AnyObject] {
                         authorName = (data["name"] as? String)!
-                        //print("aaaaaaaaaaa \(authorName)")
                         completion(authorName)
-//                        var tt = data["title"]!
-//                        book.title = data["title"] as String?
-//                        let coverId = data["covers"][1]!
-//                        book.coverUrl = retrieveCoverUrl(coverId: coverId)
                     }
                 }
             };
