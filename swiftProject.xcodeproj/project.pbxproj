@@ -146,6 +146,9 @@
 				B48ABAAA27C645D000E77EEF /* DetailsViewController.swift */,
 				B48ABAAC27C6732700E77EEF /* WebViewController.swift */,
 				D6C0088327C43A1300F93756 /* HomeController.swift */,
+				D6C0088327C43A1300F93756 /* ViewController.swift */,
+				B48ABAAA27C645D000E77EEF /* DetailsViewController.swift */,
+				B48ABAAC27C6732700E77EEF /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
