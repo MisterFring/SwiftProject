@@ -11,6 +11,8 @@ class HomeController: UIViewController {
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

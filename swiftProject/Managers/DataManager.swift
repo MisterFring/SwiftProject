@@ -21,14 +21,24 @@ class DataManager {
         UserDefaults.standard.set(try? PropertyListEncoder().encode(books), forKey:"favBooks")
     }
     
-    func loadData(){
+    func insertBook(data : Book) {
+        var existingsBooks : [Book] = loadData()!
+        existingsBooks.append(data)
+        writeData(data: existingsBooks)
+        
+    }
+    
+    func loadData() -> Array<Book>? {
+        var favbooks : Array<Book> = []
         if let data = UserDefaults.standard.value(forKey:"favBooks") as? Data {
-            let favbooks = try? PropertyListDecoder().decode(Array<Book>.self, from: data)
+             favbooks = try! PropertyListDecoder().decode(Array<Book>.self, from: data)
+            
             //print("livres favoris : \(favbooks!)")
-            for favbook in favbooks! {
-                print("livre fav : \(favbook)")
-            }
+            //for favbook in favbooks! {
+                //print("livre fav : \(favbook)")
+            //}
         }
+        return favbooks
     }
     
     

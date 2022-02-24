@@ -12,6 +12,7 @@ class ApiManager {
     static let shared = ApiManager()
     private init(){}
     //let baseUrlApi = "https://openlibrary.org/works/OL45883W.json"
+    let booksList = ["OL362427W", "OL8193420W", "OL551668W", "OL10264W", "OL15100036W", "OL51950W", "OL51949W", "OL97774W"]
     
     //var booksIdArray = [String]?
     
@@ -68,5 +69,15 @@ class ApiManager {
     
     func getCoverUrl(coverId : String) -> URL{
         return URL(string: "https://covers.openlibrary.org/b/id/\(coverId).jpg")!
+    }
+    
+    func pickRandomBookId() {
+        let randomInt = Int.random(in: 1..<booksList.count)
+        ApiManager.shared.fetchBook(bookId : String(randomInt), { book in
+            print(book)
+            DataManager.shared.insertBook(data : book)
+        })
+        
+    
     }
 }
