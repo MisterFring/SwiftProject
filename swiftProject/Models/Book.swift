@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Book {
+struct Book : Codable {
     let title:String
     let coverUrl:URL
     let description:String
@@ -22,10 +22,10 @@ struct Author {
 extension Book {
     init?(json: [String: AnyObject]) {
         guard let title = json["title"] as? String,
-              let coverId = json["covers"]![1] as? Int,//json["coordinates"] as? String,
-            let description = json["description"] as? String,
-            let authors = json["authors"] as? [[String:AnyObject]]//getAuthors(authorsArray: json["authors"] as? [[String:AnyObject]]),
-            //let publicationDate = json["created"]["value"] as? String
+              let coverId = json["covers"]![1] as? Int,
+              let description = json["description"] as? String,
+              let authors = json["authors"] as? [[String:AnyObject]],
+              let publicationDateObj = json["created"] as? [String:String]
         else {
             return nil
         }
@@ -33,7 +33,7 @@ extension Book {
         self.coverUrl = ApiManager.shared.getCoverUrl(coverId: String(coverId))
         
         //var authorsId = getAuthors(authorsArray: authors)
-        var authorsArray : [String]!
+        //var authorsArray : [String]!
         for authorObj in authors {
             guard let author = authorObj["author"]
             else {
@@ -48,9 +48,11 @@ extension Book {
                 //authorsArray.append(authorName)
             })
         }
+        
+        
         self.title = title
         self.description = description
-        self.publicationDate = ""
+        self.publicationDate = publicationDateObj["value"]!
     }
     
     
